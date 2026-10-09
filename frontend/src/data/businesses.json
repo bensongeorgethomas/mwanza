@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Mwanza Yacht Club",
+    "slug": "mwanza-yacht-club",
+    "description": "A premium lakeside restaurant and social club overlooking Lake Victoria. Enjoy fresh tilapia, cold drinks, and stunning sunset views from the veranda. The club also offers boat rides and a swimming pool for members and guests.",
+    "whatsapp": "+255762000001",
+    "category": "Restaurants & Cafes",
+    "address": "Capri Point, Mwanza",
+    "latitude": -2.5068,
+    "longitude": 32.8985,
+    "opening_hours": "Mon-Sun 10:00-22:00",
+    "is_verified": true,
+    "is_featured": true,
+    "images": [
+      { "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800", "alt": "Restaurant interior with lake view" },
+      { "url": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800", "alt": "Outdoor dining area" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Tunza Lodge",
+    "slug": "tunza-lodge",
+    "description": "A charming boutique lodge nestled in the rocky hills of Mwanza. With cozy rooms, lush gardens, and panoramic views of the city and lake, Tunza Lodge is perfect for both business travelers and tourists looking for a quiet retreat.",
+    "whatsapp": "+255762000002",
+    "category": "Hotels & Lodges",
+    "address": "Nyamagana District, Mwanza",
+    "latitude": -2.5167,
+    "longitude": 32.9000,
+    "opening_hours": "24 hours",
+    "is_verified": true,
+    "is_featured": true,
+    "images": [
+      { "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800", "alt": "Lodge exterior with garden" },
+      { "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800", "alt": "Cozy room interior" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Serengeti Boat Safaris",
+    "slug": "serengeti-boat-safaris",
+    "description": "Experience the magic of Lake Victoria with guided boat safaris to Saanane Island National Park and surrounding fishing villages. Our experienced captains share stories of local culture while you spot hippos, monitor lizards, and rare bird species.",
+    "whatsapp": "+255762000003",
+    "category": "Tours & Activities",
+    "address": "Ferry Terminal, Mwanza",
+    "latitude": -2.5091,
+    "longitude": 32.9027,
+    "opening_hours": "Mon-Sat 07:00-17:00",
+    "is_verified": true,
+    "is_featured": true,
+    "images": [
+      { "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800", "alt": "Boat on Lake Victoria" },
+      { "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800", "alt": "Scenic lake view" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Jiwe Restaurant",
+    "slug": "jiwe-restaurant",
+    "description": "Built atop one of Mwanza's iconic granite boulders, Jiwe Restaurant offers a unique dining experience. The menu features a fusion of Tanzanian and international cuisine, with signature dishes like nyama choma and grilled lake perch.",
+    "whatsapp": "+255762000004",
+    "category": "Restaurants & Cafes",
+    "address": "Bismarck Rock Road, Mwanza",
+    "latitude": -2.5120,
+    "longitude": 32.9050,
+    "opening_hours": "Tue-Sun 11:00-23:00",
+    "is_verified": true,
+    "is_featured": false,
+    "images": [
+      { "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800", "alt": "Fine dining table setup" },
+      { "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800", "alt": "Grilled fish platter" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Ryan's Bay Hotel",
+    "slug": "ryans-bay-hotel",
+    "description": "A 4-star hotel on the shores of Lake Victoria, offering luxurious rooms with private balconies, a rooftop infinity pool, spa services, and a world-class conference center. Ideal for corporate events and romantic getaways.",
+    "whatsapp": "+255762000005",
+    "category": "Hotels & Lodges",
+    "address": "Station Road, Mwanza",
+    "latitude": -2.5100,
+    "longitude": 32.8980,
+    "opening_hours": "24 hours",
+    "is_verified": true,
+    "is_featured": true,
+    "images": [
+      { "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800", "alt": "Hotel exterior at sunset" },
+      { "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800", "alt": "Luxury hotel room" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Bujora Cultural Centre Tours",
+    "slug": "bujora-cultural-centre-tours",
+    "description": "Discover the rich Sukuma heritage at Bujora Cultural Centre. Guided tours include traditional dance performances, a museum of Sukuma artifacts, and the iconic Sukuma Church with its unique African architectural design.",
+    "whatsapp": "+255762000006",
+    "category": "Tours & Activities",
+    "address": "Kisesa Road, Mwanza",
+    "latitude": -2.4750,
+    "longitude": 32.8600,
+    "opening_hours": "Mon-Sat 08:00-17:00",
+    "is_verified": false,
+    "is_featured": false,
+    "images": [
+      { "url": "https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=800", "alt": "Cultural dance performance" },
+      { "url": "https://images.unsplash.com/photo-1590845947698-8924d7409b56?w=800", "alt": "Traditional artifacts display" }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Kuleana Pizzeria",
+    "slug": "kuleana-pizzeria",
+    "description": "The best wood-fired pizza in Mwanza! Kuleana is a social enterprise restaurant that serves artisan pizzas, fresh salads, and smoothies. All profits support street children education programs in the community.",
+    "whatsapp": "+255762000007",
+    "category": "Restaurants & Cafes",
+    "address": "Pamba Road, Mwanza",
+    "latitude": -2.5150,
+    "longitude": 32.9020,
+    "opening_hours": "Mon-Sat 11:00-21:00",
+    "is_verified": true,
+    "is_featured": false,
+    "images": [
+      { "url": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800", "alt": "Wood-fired pizza" },
+      { "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800", "alt": "Cozy restaurant interior" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Gold Crest Hotel",
+    "slug": "gold-crest-hotel",
+    "description": "A modern 3-star hotel in the heart of Mwanza's business district. Features include spacious rooms with city views, a rooftop bar, on-site restaurant serving buffet breakfast, and reliable Wi-Fi throughout the property.",
+    "whatsapp": "+255762000008",
+    "category": "Hotels & Lodges",
+    "address": "Post Street, Mwanza CBD",
+    "latitude": -2.5130,
+    "longitude": 32.9040,
+    "opening_hours": "24 hours",
+    "is_verified": true,
+    "is_featured": false,
+    "images": [
+      { "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800", "alt": "Modern hotel building" },
+      { "url": "https://images.unsplash.com/photo-1590490360182-c33d955c3722?w=800", "alt": "Hotel lobby" }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Saanane Island Excursions",
+    "slug": "saanane-island-excursions",
+    "description": "Visit Tanzania's smallest national park! Our half-day trips to Saanane Island include a boat ride, guided nature walk, rock climbing, and the chance to see impala, rock hyrax, and crocodiles in their natural habitat. Perfect for families.",
+    "whatsapp": "+255762000009",
+    "category": "Tours & Activities",
+    "address": "Capri Point Jetty, Mwanza",
+    "latitude": -2.5050,
+    "longitude": 32.8950,
+    "opening_hours": "Daily 08:00-16:00",
+    "is_verified": true,
+    "is_featured": true,
+    "images": [
+      { "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800", "alt": "Island landscape" },
+      { "url": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800", "alt": "Nature trail on island" }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Isamilo Cafe",
+    "slug": "isamilo-cafe",
+    "description": "A trendy coffee shop and brunch spot in the Isamilo neighborhood. Known for specialty Tanzanian coffee, freshly baked pastries, and a vibrant atmosphere popular with young professionals and digital nomads.",
+    "whatsapp": "+255762000010",
+    "category": "Restaurants & Cafes",
+    "address": "Isamilo Hill, Mwanza",
+    "latitude": -2.5200,
+    "longitude": 32.9100,
+    "opening_hours": "Mon-Sat 07:00-19:00",
+    "is_verified": false,
+    "is_featured": false,
+    "images": [
+      { "url": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800", "alt": "Coffee shop interior" },
+      { "url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800", "alt": "Latte art on coffee" }
+    ]
+  }
+]

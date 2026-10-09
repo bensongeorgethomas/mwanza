@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Mwanza Jazz Festival",
+    "slug": "mwanza-jazz-festival",
+    "description": "The biggest jazz festival in the Lake Zone! Three days of live performances featuring local and international artists, food stalls, and art exhibitions at the Kamanga Waterfront.",
+    "event_date": "2026-08-15T18:00:00Z",
+    "location": "Kamanga Waterfront, Mwanza",
+    "image_url": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800",
+    "source_credit": "Mwanza Arts Council"
+  },
+  {
+    "id": 2,
+    "name": "Lake Victoria Marathon",
+    "slug": "lake-victoria-marathon",
+    "description": "Annual marathon along the scenic shores of Lake Victoria. Categories include full marathon, half marathon, and 10km fun run. All proceeds support community health initiatives in the region.",
+    "event_date": "2026-06-20T06:00:00Z",
+    "location": "Mwanza City Stadium",
+    "image_url": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=800",
+    "source_credit": "Lake Zone Athletics"
+  },
+  {
+    "id": 3,
+    "name": "Sukuma Heritage Day",
+    "slug": "sukuma-heritage-day",
+    "description": "A vibrant celebration of Sukuma culture featuring traditional dances, drumming workshops, storytelling sessions, craft markets, and authentic Sukuma cuisine. Open to all visitors.",
+    "event_date": "2026-11-10T09:00:00Z",
+    "location": "Bujora Cultural Centre, Mwanza",
+    "image_url": "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=800",
+    "source_credit": "Bujora Cultural Trust"
+  },
+  {
+    "id": 4,
+    "name": "Mwanza Food Festival",
+    "slug": "mwanza-food-festival",
+    "description": "Taste the best of Mwanza! Local restaurants and street food vendors come together for a weekend of culinary delights. Highlights include a nyama choma cook-off and lakeside BBQ competition.",
+    "event_date": "2026-12-05T11:00:00Z",
+    "location": "Bismarck Rock Area, Mwanza",
+    "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800",
+    "source_credit": "Mwanza Tourism Board"
+  },
+  {
+    "id": 5,
+    "name": "Saanane Island Cleanup & Nature Walk",
+    "slug": "saanane-island-cleanup",
+    "description": "Join fellow nature lovers for a community cleanup of Saanane Island followed by a guided nature walk with park rangers. Learn about conservation efforts and the unique wildlife of Tanzania's smallest national park.",
+    "event_date": "2026-09-28T07:00:00Z",
+    "location": "Saanane Island National Park",
+    "image_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800",
+    "source_credit": "TANAPA Mwanza"
+  }
+]
