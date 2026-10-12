@@ -1,176 +1,65 @@
-import Link from 'next/link'
-import {
-  ArrowRight,
-  Utensils,
-  BedDouble,
-  Compass,
-  CalendarDays,
-} from 'lucide-react'
-import { getFeaturedBusinesses, getUpcomingEvents } from '@/lib/data'
-import BusinessCard from '@/components/business-card'
-import EventCard from '@/components/event-card'
+'use client'
 
-const categoryCards = [
-  {
-    name: 'Restaurants & Cafes',
-    icon: Utensils,
-    color: 'from-orange-500 to-amber-500',
-    href: '/businesses?category=Restaurants+%26+Cafes',
-  },
-  {
-    name: 'Hotels & Lodges',
-    icon: BedDouble,
-    color: 'from-blue-500 to-cyan-500',
-    href: '/businesses?category=Hotels+%26+Lodges',
-  },
-  {
-    name: 'Tours & Activities',
-    icon: Compass,
-    color: 'from-emerald-500 to-teal-500',
-    href: '/businesses?category=Tours+%26+Activities',
-  },
+import { ArrowDown, ArrowUpRight, Play, Plus } from 'lucide-react'
+import { useState } from 'react'
+
+const stays = [
+  { name: 'The Riverside House', place: 'Mwanza, Tanzania', type: 'City escape', shade: 'stay-one' },
+  { name: 'Kopje Retreat', place: 'Lake Victoria', type: 'Quiet indulgence', shade: 'stay-two' },
 ]
 
-export default async function Home() {
-  const featured = await getFeaturedBusinesses()
-  const upcoming = await getUpcomingEvents()
+const experiences = [
+  ['01', 'Lake rituals', 'Unhurried moments shaped by water, light and local character.'],
+  ['02', 'A table for you', 'Seasonal plates, carefully poured drinks and conversations that last.'],
+  ['03', 'The city, slowly', 'A more intimate way to meet Mwanza and its remarkable surroundings.'],
+]
+
+export default function Home() {
+  const [videoOpen, setVideoOpen] = useState(false)
 
   return (
     <>
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#0E7C7B] via-[#0A5E5D] to-[#1B6FA8] px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
-        {/* Decorative circles */}
-        <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/5 blur-3xl" />
-        <div className="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-white/5 blur-3xl" />
+      <section className="hotel-hero">
+        <div className="hero-grain" />
+        <div className="hero-media-note">YOUR HERO VIDEO / IMAGE</div>
+        <div className="hero-content">
+          <p className="eyebrow text-white/80">Mwanza · Tanzania</p>
+          <h1>Stay a little<br /><em>longer.</em></h1>
+          <p className="hero-copy">A collection of places for slow mornings, generous tables and stories worth bringing home.</p>
+          <a className="outline-link" href="#stays">Explore our stays <ArrowDown size={15} /></a>
+        </div>
+        <button className="play-button" onClick={() => setVideoOpen(true)} aria-label="Play brand film"><Play size={20} fill="currentColor" /></button>
+        <div className="hero-index">01 / 04</div>
+      </section>
 
-        <div className="relative mx-auto max-w-4xl text-center">
-          <span className="mb-4 inline-block rounded-full bg-white/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white/90 backdrop-blur-sm">
-            Lake Victoria&apos;s Rock City
-          </span>
-          <h1 className="mb-5 text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">
-            Discover{' '}
-            <span className="bg-gradient-to-r from-amber-300 to-orange-400 bg-clip-text text-transparent">
-              Mwanza
-            </span>
-          </h1>
-          <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-white/80">
-            Find the best restaurants, hotels, tours, and upcoming events in
-            Mwanza, Tanzania. Your complete city directory.
-          </p>
-          <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <Link
-              href="/businesses"
-              className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-bold text-primary shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl active:scale-95"
-            >
-              Browse Businesses
-              <ArrowRight size={16} />
-            </Link>
-            <Link
-              href="/events"
-              className="inline-flex items-center gap-2 rounded-xl border border-white/30 px-6 py-3 text-sm font-bold text-white backdrop-blur-sm transition-all hover:bg-white/10 active:scale-95"
-            >
-              <CalendarDays size={16} />
-              View Events
-            </Link>
-          </div>
+      <section className="intro-section" id="story">
+        <p className="eyebrow">A considered welcome</p>
+        <div className="intro-grid">
+          <h2>More than a place<br />to <em>stay.</em></h2>
+          <div className="intro-copy"><p>We believe the best kind of hospitality is felt, not announced. It lives in beautifully simple spaces, thoughtful details and the feeling that there is nowhere else you need to be.</p><a href="#experiences" className="text-link">Discover our story <ArrowUpRight size={16} /></a></div>
         </div>
       </section>
 
-      {/* Categories */}
-      <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <h2 className="mb-8 text-center text-2xl font-bold text-text-primary">
-          Browse by Category
-        </h2>
-        <div className="stagger-children grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {categoryCards.map(({ name, icon: Icon, color, href }) => (
-            <Link
-              key={name}
-              href={href}
-              className="group flex items-center gap-4 rounded-2xl border border-border bg-surface-card p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-            >
-              <div
-                className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${color} shadow-md transition-transform group-hover:scale-110`}
-              >
-                <Icon size={22} color="#fff" />
-              </div>
-              <div>
-                <h3 className="font-bold text-text-primary">{name}</h3>
-                <p className="text-xs text-text-muted">Explore →</p>
-              </div>
-            </Link>
-          ))}
+      <section className="stays-section" id="stays">
+        <div className="section-title"><div><p className="eyebrow">Our places</p><h2>Choose your<br /><em>occasion.</em></h2></div><p>Every address has its own pace. Find the one that feels like yours.</p></div>
+        <div className="stay-grid">
+          {stays.map((stay, index) => <article key={stay.name} className={`stay-card ${stay.shade}`}>
+            <div className="media-label">YOUR {index === 0 ? 'HOTEL PHOTO' : 'HOTEL VIDEO'}</div>
+            <div className="stay-details"><p>{stay.type}</p><h3>{stay.name}</h3><span>{stay.place}</span><a href="#contact" aria-label={`Discover ${stay.name}`}><ArrowUpRight size={20} /></a></div>
+          </article>)}
         </div>
       </section>
 
-      {/* Featured Businesses */}
-      <section className="mx-auto max-w-7xl px-4 pb-14 sm:px-6 lg:px-8">
-        <div className="mb-8 flex items-end justify-between">
-          <div>
-            <h2 className="text-2xl font-bold text-text-primary">
-              Featured <span className="text-primary">Businesses</span>
-            </h2>
-            <p className="mt-1 text-sm text-text-secondary">
-              Verified and popular spots in Mwanza
-            </p>
-          </div>
-          <Link
-            href="/businesses"
-            className="hidden items-center gap-1 text-sm font-semibold text-primary transition-colors hover:text-primary-dark sm:flex"
-          >
-            View all <ArrowRight size={14} />
-          </Link>
-        </div>
-        <div className="stagger-children grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {featured.slice(0, 6).map((biz) => (
-            <BusinessCard key={biz.id} business={biz} />
-          ))}
-        </div>
-        <div className="mt-6 text-center sm:hidden">
-          <Link
-            href="/businesses"
-            className="inline-flex items-center gap-1 text-sm font-semibold text-primary"
-          >
-            View all businesses <ArrowRight size={14} />
-          </Link>
-        </div>
+      <section className="experiences-section" id="experiences">
+        <div className="experience-photo"><span>YOUR EXPERIENCE PHOTO</span></div>
+        <div className="experience-content"><p className="eyebrow">Make it memorable</p><h2>There is always<br />more to <em>discover.</em></h2><p className="experience-lead">Stay for the quiet luxury of doing less, or let us arrange something entirely unexpected.</p><div className="experience-list">{experiences.map(([number, title, copy]) => <div className="experience-item" key={number}><span>{number}</span><div><h3>{title}</h3><p>{copy}</p></div><Plus size={19} /></div>)}</div></div>
       </section>
 
-      {/* Upcoming Events */}
-      {upcoming.length > 0 && (
-        <section className="border-t border-border bg-white">
-          <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-            <div className="mb-8 flex items-end justify-between">
-              <div>
-                <h2 className="text-2xl font-bold text-text-primary">
-                  Upcoming <span className="text-accent">Events</span>
-                </h2>
-                <p className="mt-1 text-sm text-text-secondary">
-                  Don&apos;t miss what&apos;s happening in Mwanza
-                </p>
-              </div>
-              <Link
-                href="/events"
-                className="hidden items-center gap-1 text-sm font-semibold text-accent transition-colors hover:text-accent-dark sm:flex"
-              >
-                All events <ArrowRight size={14} />
-              </Link>
-            </div>
-            <div className="stagger-children flex flex-col gap-4">
-              {upcoming.slice(0, 3).map((evt) => (
-                <EventCard key={evt.id} event={evt} />
-              ))}
-            </div>
-            <div className="mt-6 text-center sm:hidden">
-              <Link
-                href="/events"
-                className="inline-flex items-center gap-1 text-sm font-semibold text-accent"
-              >
-                View all events <ArrowRight size={14} />
-              </Link>
-            </div>
-          </div>
-        </section>
-      )}
+      <section className="journal-section">
+        <p className="eyebrow">The journal</p><h2>Notes from<br /><em>our world.</em></h2><div className="journal-card"><div><p>BEHIND THE DOORS</p><h3>A sense of place,<br />in every detail.</h3><a href="#contact" className="text-link">Read our journal <ArrowUpRight size={16} /></a></div><span>YOUR EDITORIAL IMAGE</span></div>
+      </section>
+
+      {videoOpen && <div className="video-modal" role="dialog" aria-modal="true" aria-label="Brand film"><button onClick={() => setVideoOpen(false)}>Close ×</button><div><Play size={32} fill="currentColor" /><p>Replace this panel with your video embed.</p></div></div>}
     </>
   )
 }
