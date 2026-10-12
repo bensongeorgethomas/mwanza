@@ -1,5 +1,5 @@
 {
-  "name": "courses-directory",
+  "name": "mwanza-hotel",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.6",
     "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
     "lucide-react": "^0.475.0",
     "next": "15.1.7",
     "postcss": "^8.5.2",
